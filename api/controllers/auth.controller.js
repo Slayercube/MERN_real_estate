@@ -28,7 +28,6 @@ export const signin = async (req, res, next) => {
         const { password: pass, ...user } = validUser._doc;
         res.cookie("access_token", token, { httpOnly: true , expires: new Date(Date.now() + 3600000) }).status(200).json({ user});
 
-
     }
     catch (error) {
         next(error);
