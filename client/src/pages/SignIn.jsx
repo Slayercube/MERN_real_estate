@@ -83,7 +83,7 @@ const SignIN = () => {
           Sign Up
         </Link>
       </div>
-      <br />
+
       {error && <p className="text-red-500">{error}</p>}
     </div>
   );
