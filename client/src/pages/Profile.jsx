@@ -28,6 +28,7 @@ const Profile = () => {
   const [formData, setFormData] = useState({});
   const dispatch = useDispatch();
   const [updateSuccess, setUpdateSuccess] = useState(false);
+  const [updateError, setUpdateError] = useState(false);
 
   useEffect(() => {
     if (file) {
