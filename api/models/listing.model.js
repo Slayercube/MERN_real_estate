@@ -31,10 +31,6 @@ const listingSchema = new mongoose.Schema({
         type : Number,
         required : true
     },
-    furnishing : {
-        type : Boolean,
-        required : true
-    },
     parking : {
         type : Boolean,
         required : true
@@ -47,15 +43,23 @@ const listingSchema = new mongoose.Schema({
         type : Boolean,
         required : true
     },
-    imageUrls : {
-        type : String,
-        required : true
+
+    imageUrls: {
+        type: [String],
+        required: true,
     },
-    userRef : {
-        type : String,
-        required : true
-    }
+    userRef: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    },
+    furnished: {
+        type: Boolean,
+        required: true,
+    },
+
 }, {timestamps : true});
+
 
 const Listing = mongoose.model('Listing', listingSchema);
 export default Listing;
