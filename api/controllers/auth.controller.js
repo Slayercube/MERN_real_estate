@@ -41,7 +41,7 @@ export const google = async (req, res, next) => {
         if (user) {
             const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
             const { password: pass, ...rest } = user._doc;
-            res.cookie("access_token", token, { httpOnly: true, expires: new Date(Date.now() + 3600000) }).status(200).json(rest);
+            res.cookie("access_token", token, { httpOnly: true, expires: new Date(Date.now() + 9600000) }).status(200).json(rest);
         } else {
             const generatedPassword = Math.random().toString(36).substring(7);
             const hashedPassword = bcrypt.hashSync(generatedPassword, 10);
@@ -54,7 +54,7 @@ export const google = async (req, res, next) => {
             await newUser.save();
             const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
             const { password: pass, ...rest } = newUser._doc;
-            res.cookie("access_token", token, { httpOnly: true, expires: new Date(Date.now() + 3600000) }).status(200).json(rest);
+            res.cookie("access_token", token, { httpOnly: true, expires: new Date(Date.now() + 9600000) }).status(200).json(rest);
         }
     } catch (error) {
         next(error);
