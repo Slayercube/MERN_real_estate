@@ -14,6 +14,7 @@ import {
   FaParking,
   FaShare,
 } from "react-icons/fa";
+import Contact from "../components/Contact.jsx";
 
 // https://sabe.io/blog/javascript-format-numbers-commas#:~:text=The%20best%20way%20to%20format,format%20the%20number%20with%20commas.
 
@@ -25,7 +26,7 @@ export default function Listing() {
   const [copied, setCopied] = useState(false);
   const [contact, setContact] = useState(false);
   const params = useParams();
-  const { currentUser } = useSelector((state) => state.user);
+  const { currentUser } = useSelector((state) => state.user.user);
 
   useEffect(() => {
     const fetchListing = async () => {
@@ -143,6 +144,7 @@ export default function Listing() {
                 Contact landlord
               </button>
             )}
+            {contact && <Contact listing={listing} />}
           </div>
         </div>
       )}
