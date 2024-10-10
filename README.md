@@ -21,7 +21,7 @@ https://www.loom.com/share/8fab83fc33234ee59ac42e4115bf7562?sid=a393584a-116b-45
 Slayercube Estate is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.
 
 
-live domain ===> https://mern-real-estate-dzfk.onrender.com/
+live domain link ===> https://mern-real-estate-dzfk.onrender.com/
 
 
 Start in GitHub ==>
