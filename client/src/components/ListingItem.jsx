@@ -23,7 +23,7 @@ export default function ListingItem({ listing }) {
               {listing.address}
             </p>
           </div>
-          <p className="text-sm text-gray-600 line-clamp-2">
+          <p className="text-sm text-gray-600 line-clamp-1">
             {listing.description}
           </p>
           <p className="text-slate-500 mt-2 font-semibold ">
