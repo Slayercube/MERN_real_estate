@@ -1,3 +1,6 @@
+https://github.com/user-attachments/assets/ac7ea612-0efb-4b87-b009-1f2237a6b00b
+
+
 # mern real estate project
 
 Slayercube Estate is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.
